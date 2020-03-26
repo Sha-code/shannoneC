@@ -6,7 +6,8 @@
     "lint": "eslint src/**/*.js",
     "lint:fix": "eslint --fix src/**/*.js",
     "clean": "rm -rf dist",
-    "clean:all": "rm -rf dist node_modules yarn.lock package-lock.json"
+    "clean:all": "rm -rf dist node_modules yarn.lock package-lock.json",
+    "deploy": "gh-pages-deploy"
   },
   "devDependencies": {
     "@babel/core": "*",
@@ -54,5 +55,14 @@
     "react-vertical-timeline-component": "^2.5.0",
     "semantic-ui-react": "^0.88.2",
     "styled-components": "^5.0.1"
+  },
+  "gh-pages-deploy": {
+    "staticpath": "dist",
+    "cname": "shannone.controu.com",
+    "prep": [
+      "build"
+    ],
+    "commit": "deploy website",
+    "noprompt": false
   }
 }

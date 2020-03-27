@@ -7,7 +7,7 @@ const Home = () => (
     <article>
       <h1 className="title">Web developer</h1>
       <p>
-        Hello ! I'am Shannone and you are seeing my porfolio website made with React.
+        Hello ! I'm Shannone and you are seeing my porfolio website made with React.
       </p>
       <p>Hope you will enjoy the tour.</p>
       <a href="./cv-english.pdf" download>Download my CV in english</a>
